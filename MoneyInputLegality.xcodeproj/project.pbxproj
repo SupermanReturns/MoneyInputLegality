@@ -15,6 +15,8 @@
 		CF09A8F320F4E8B3007879BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A8F220F4E8B3007879BC /* main.m */; };
 		CF09A8FD20F4E8B3007879BC /* MoneyInputLegalityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A8FC20F4E8B3007879BC /* MoneyInputLegalityTests.m */; };
 		CF09A90820F4E8B3007879BC /* MoneyInputLegalityUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A90720F4E8B3007879BC /* MoneyInputLegalityUITests.m */; };
+		CF09A91820F4E9B7007879BC /* MoneyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A91720F4E9B7007879BC /* MoneyTextField.m */; };
+		CF09A91B20F4E9D2007879BC /* MoneyTextFieldLimit.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A91A20F4E9D2007879BC /* MoneyTextFieldLimit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		CF09A90320F4E8B3007879BC /* MoneyInputLegalityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MoneyInputLegalityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF09A90720F4E8B3007879BC /* MoneyInputLegalityUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyInputLegalityUITests.m; sourceTree = "<group>"; };
 		CF09A90920F4E8B3007879BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF09A91620F4E9B7007879BC /* MoneyTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyTextField.h; sourceTree = "<group>"; };
+		CF09A91720F4E9B7007879BC /* MoneyTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyTextField.m; sourceTree = "<group>"; wrapsLines = 1; };
+		CF09A91920F4E9D2007879BC /* MoneyTextFieldLimit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MoneyTextFieldLimit.h; sourceTree = "<group>"; };
+		CF09A91A20F4E9D2007879BC /* MoneyTextFieldLimit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MoneyTextFieldLimit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		CF09A8E220F4E8B1007879BC /* MoneyInputLegality */ = {
 			isa = PBXGroup;
 			children = (
+				CF09A91520F4E993007879BC /* TextField */,
 				CF09A8E320F4E8B1007879BC /* AppDelegate.h */,
 				CF09A8E420F4E8B2007879BC /* AppDelegate.m */,
 				CF09A8E620F4E8B2007879BC /* ViewController.h */,
@@ -130,6 +137,17 @@
 				CF09A90920F4E8B3007879BC /* Info.plist */,
 			);
 			path = MoneyInputLegalityUITests;
+			sourceTree = "<group>";
+		};
+		CF09A91520F4E993007879BC /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				CF09A91620F4E9B7007879BC /* MoneyTextField.h */,
+				CF09A91720F4E9B7007879BC /* MoneyTextField.m */,
+				CF09A91920F4E9D2007879BC /* MoneyTextFieldLimit.h */,
+				CF09A91A20F4E9D2007879BC /* MoneyTextFieldLimit.m */,
+			);
+			path = TextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF09A91820F4E9B7007879BC /* MoneyTextField.m in Sources */,
 				CF09A8E820F4E8B2007879BC /* ViewController.m in Sources */,
 				CF09A8F320F4E8B3007879BC /* main.m in Sources */,
 				CF09A8E520F4E8B2007879BC /* AppDelegate.m in Sources */,
+				CF09A91B20F4E9D2007879BC /* MoneyTextFieldLimit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
