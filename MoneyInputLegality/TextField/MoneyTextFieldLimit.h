@@ -8,7 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MoneyTextFieldLimitDelegate;
+@protocol MoneyTextFieldLimitDelegate<NSObject>;
+@optional
+
+-(void)valueChange:(id)sender;
+
+@end
 
 
 @interface MoneyTextFieldLimit : NSObject
@@ -16,7 +21,7 @@
 @property (nonatomic, assign) id <MoneyTextFieldLimitDelegate> delegate;
 @property (nonatomic, strong) NSString *max; // 默认99999.99
 
-- (void)valueChange:(id)sender;
+//- (void)valueChange:(id)sender;
 
 
 @end
