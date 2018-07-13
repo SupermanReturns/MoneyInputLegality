@@ -21,7 +21,6 @@
 @property (nonatomic, assign) id <MoneyTextFieldLimitDelegate> delegate;
 @property (nonatomic, strong) NSString *max; // 默认99999.99
 
-//- (void)valueChange:(id)sender;
 
 
 @end
